@@ -1,0 +1,396 @@
+
+/* ul es una caja */
+
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    background-color: #13a4a4;
+}
+
+.main-nav_item {
+    display: inline-block;
+}
+
+.main-nav_item a {
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main-nav_item a:hover {
+    color: blue;
+}
+
+/* :active ejemplo
+enlace cambiará a color mientras hace clic en él
+se usa comúnmente en los elementos <a> y <button>, pero también se puede usar en otros elementos.
+*/
+.main-nav_item a:active {
+    color: red;
+}
+
+.main-nav_item a::after {
+    content: " | ";
+}
+
+/* ::marker ejemplo
+configurado para display: list-item, como el elemento <li> y <summary>.
+SS puedes utilizarse en una regla con ::marker como selector:
+
+Todas las propiedades de fuentes
+color
+La propiedad text-combine-upright, unicode-bidi y direction
+La propiedad content
+*/
+ul li::marker {
+color: red;
+    font-size: 1.5em;
+  }
+
+/* ::after ejemplo 1*/
+.texto-aburrido::after {
+    content: "<- ABURRIDO🐱‍👤";
+    color: red;
+}
+.texto-aburrido{
+  color: lime;
+  background-color: black;
+  padding: 5px;
+} 
+
+.texto-excitante::after{
+    content: "<-EXCITANTE🐱‍🐉!";
+    color: rgb(0, 149, 50);
+}
+
+.texto-excitante{
+  color: lime;
+  background-color: black;
+  padding: 5px;
+} 
+/* ::after ejemplo 2*/
+.calendario{
+    color: rgb(45, 218, 195);
+}
+.calendario-perfecto{
+    content: "This is a fancy orange box.";
+    background-color: #a4e9d2a4;
+    border-color: black;
+    border-style: dotted;
+}
+/* ::after ejemplo 3*/
+span[data-descr] {
+    position: relative;
+    text-decoration: underline;
+    color: green;
+    cursor: help;
+  }
+  
+  span[data-descr]:hover::after,
+  span[data-descr]:focus::after {
+    content: attr(data-descr);
+    position: absolute;
+    left: 0;
+    top: 24px;
+    min-width: 200px;
+    border: 1px green;
+    border-radius: 10px;
+    background-color: #000203;
+    padding: 12px;
+    color: #fdfdfd;
+    font-size: 14px;
+    z-index: 1;
+  }
+
+  /* ::before y ::after ejemplo*/
+  q::before {
+    content: "«";
+    color: blue;
+  }
+  q::after {
+    content: "»";
+    color: red;
+  }
+
+  /* ::before y ejemplo*/
+  .hora-perfecta {
+    background-color: #a4e9d2a4;
+  }
+  
+  .hora::before {
+    content: "Mira esta caja unica.";
+    background-color: #a4e9d2a4;
+    border-color: black;
+    border-style: dotted;
+  }
+
+  /* ::first-letter ejemplo
+  Propiedades permitidas
+Sólo unas pocas propiedades de CSS se pueden usar con el pseudoelemento ::first-letter:
+
+  Todas las propiedades de fuente: font, font-style, font-feature-settings, font-kerning, 
+  font-language-override, font-stretch, font-synthesis, font-variant, font-variant-alternates, 
+  font-variant-caps, font-variant-east-asian, font-variant-ligatures, font-variant-numeric, 
+  font-variant-position, font-weight, font-size, font-size-adjust, line-height and font-family
+
+  Todas las propiedades de fondo: background, background-color, background-image, background-clip, 
+  background-origin, background-position, background-repeat, background-size, background-attachment, 
+  and background-blend-mode
+
+  Todas las propiedades de márgenes: margin, margin-top, margin-right, margin-bottom, margin-left
+
+  Todas las propiedades de relleno: padding, padding-top, padding-right, padding-bottom, 
+  padding-left
+  Todas las propiedades de bordes: border, border-style, border-color, border-width, border-radius,
+  border-image
+
+  La propiedad color
+
+  Las propiedades text-decoration, text-shadow, text-transform, letter-spacing, 
+  word-spacing (when appropriate), line-height, text-decoration-color, text-decoration-line, 
+  text-decoration-style, box-shadow, float, vertical-align (sólo si float es none)
+  */
+  .first-letter-p::first-letter {
+    color: red;
+    font-size: 130%;
+    }
+
+    /* ::selection */
+     /* ::placeholder ejemplo */
+    input::placeholder {
+        color: rgba(59, 30, 30, 0.425);
+        font-size: 1.2em;
+        font-style: italic;
+        padding: 4px;
+        background-color: #a4e9d2a4;
+      }
+
+/*::spelling-error representa un segmento de texto que el user agent ha marcado como deletreado
+ incorrectamente.
+Solo se puede usar un pequeño subconjunto de propiedades de CSS en una regla con 
+::spelling-error en su selector:
+
+      color
+      background-color
+      cursor
+      caret-color
+      outline y sus longhands
+      text-decoration y sus propiedades asociadas
+      text-emphasis-color
+      text-shadow
+      */
+
+/*::grammar-error*/
+
+/*:checked ejemplo 1*/
+  div,
+select {
+  margin: 8px;
+}
+
+  /* Etiquetas para entradas marcadas */
+  input:checked + label {
+  color: rgb(12, 175, 250);
+}
+
+  /* Elemento Radio, cuando está marcado */
+  input[type="radio"]:checked {
+  box-shadow: 0 0 0 10px rgba(196, 171, 253, 0.329);
+}
+
+  /* Elemento Checkbox, cuando está marcado */
+  input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 10px rgba(255, 105, 180, 0.301);
+}
+
+  /* Elementos Option, cuando se seleccionan */
+  option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: rgb(47, 0, 255);
+  }
+
+/*:checked ejemplo 2*/
+
+/* Hide the toggle checkbox */
+#expand-toggle {
+  display: none;
+}
+
+/* Hide expandable content by default */
+.expandable {
+  visibility: collapse;
+  background: #ddd;
+}
+
+/* Style the button */
+#expand-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 11px;
+  background-color: rgb(62, 240, 157);
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+/* Show hidden content when the checkbox is checked */
+#expand-toggle:checked ~ * .expandable {
+  visibility: visible;
+}
+
+/* Style the button when the checkbox is checked */
+#expand-toggle:checked ~ #expand-btn {
+  background-color: #ccc;
+}
+
+/*:default ejemplo 1
+ se puede usar en los elementos <button>, <input type="checkbox">, <input type="radio"> y <option>.
+*/
+#summer:default {
+  box-shadow: 0 0 2px 1px coral;
+}
+
+input:default + label {
+  color:coral;
+}
+
+/*:dir()
+ltr
+Orientar elementos de izquierda a derecha.
+rtl
+Orientar elementos de derecha a izquierda.*/
+
+/*disabled ejemplo 1*/
+
+/*disabled ejemplo 2*/
+.box {
+  background: rgba(3, 255, 171, 0.637);
+  height: 10px;
+  width: 360px;
+  display: inline-block;
+  color: #000000;
+}
+
+.box:empty {
+  background: rgba(185, 104, 104, 0.534);
+}
+
+/*:enabled y :disabled ejemplo*/
+#FirstField:enabled {
+  color: #2b2;
+}
+
+#SecondField:disabled {
+  color: #aaa;
+}
+
+#FirstEnviar:enabled {
+  color: #2b2;
+}
+
+/*:first ejemplo
+tilizada con la regla-at @page, representa la primera página de un documento impreso.
+JavaScript
+document.querySelector("button").onclick = function () {
+  window.print();
+}
+*/
+@page :first {
+  margin-left: 50%;
+  margin-top: 50%;
+}
+
+p {
+  page-break-after: always;
+}
+
+/*:first-child ejemplo 1
+Selecciona cualquier <p> que sea el primer
+elemento entre sus hermanos 
+*/
+p.texto-selecionado:first-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+}
+
+/*:first-child ejemplo 2*/
+ul.lista-segunda-todo{
+  color: rgb(5, 83, 57);
+}
+
+li.lista-segunda:first-child {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+/*:first-of-type ejemplo 1*/
+p.parrafo:first-of-type {
+  color: red;
+  font-style: italic;
+}
+
+/*:first-of-type ejemplo 2
+Este ejemplo muestra cómo los elementos anidados también pueden utilizarse. 
+Tenga en cuenta que el selector universal (*) está implícito cuando no se escribe 
+un selector simple.
+*/
+article :first-of-type {
+  background-color: #a4e9d2a4;
+}
+
+/* :fullscreen ejemplo 
+Nota: La especificación W3C usa la palabra única :fullscreen, sin guiones, pero las 
+implementaciones experimentales de WebKit y Gecko usan una variante prefijada con dos palabras 
+separadas por un guión: :-webkit-full-screen y :-moz-full-screen, respectivamente.
+Microsoft Edge e Internet Explorer utilizan la convención estándar: :fullscreen y :-ms-fullscreen,
+respectivamente.
+*/
+#fullscreen:fullscreen {
+  padding: 42px;
+  background-color: pink;
+  border:2px solid #f00;
+  font-size: 200%;
+}
+
+#fullscreen:fullscreen > h1 {
+  color: red;
+}
+
+#fullscreen:fullscreen > p {
+  color: darkred;
+}
+
+#fullscreen:fullscreen > button {
+  display: none;
+}
+
+/* :focus ejemplo 
+Nota: Esta pseudo-clase se aplica solo al elemento enfocado en sí mismo. 
+Utilice :focus-within si desea seleccionar un elemento que contenga un elemento enfocado.
+*/
+.red-input:focus {
+  background:rgb(10, 146, 101);
+  color: rgb(248, 248, 248);
+}
+
+.blue-input:focus {
+  background: rgb(207, 201, 238);
+  color: rgb(25, 25, 128);
+  font-style: italic;
+}
+
+/* :hover ejemplo */
+a.pasa-delante{
+  background-color: powderblue;
+  transition: background-color 7s;
+  font-size: 60px;
+}
+
+a.pasa-delante:hover {
+  background-color: gold;
+  color: rgb(5, 1, 1);
+}
+
+

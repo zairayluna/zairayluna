@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+        <!-- barra de navegacion
+            :active ejemplo -->
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav_item"><a href="">Home</a></li>
+                <li class="main-nav_item"><a href="">Cursos</a></li>
+                <li class="main-nav_item"><a href="">Instructores</a></li>
+                <li class="main-nav_item"><a href="">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ::marker ejemplo-->
+    <main>
+        <section>
+            <ul>
+                <li class="lista-desordenada">Duraznos</li>
+                <li class="lista-desordenada">Manzanas</li>
+                <li class="lista-desordenada">Ciruelas</li>
+            </ul>
+        </section>
+    </main>
+    
+    <!-- ::after ejemplo 1-->
+    <main>
+        <p class="texto-aburrido">Aquí hay un texto simple y aburrido.</p>
+        <p>Aquí hay un texto normal que no es ni aburrido ni emocionante.</p>
+        <p class="texto-excitante">Contribuir a MDN es fácil y divertido.</p>
+    </main>
+    
+    <!-- ::after ejemplo 2-->
+    <form action="">
+        <label for="calendario">
+            <span class="calendario">Calendario</span>
+            <input class="calendario-perfecto" type="datetime-local" id="calendario" name="calendario">
+        </label>
+        <input type="submit">
+    </form>
+
+    <!-- ::after ejemplo 3-->
+    <p>Aquí tenemos algunos
+        <span tabindex="0" data-descr="colección de palabras y puntuación">textos</span> con una poca
+        <span tabindex="0" data-descr="pequeñas ventanas emergentes que aparecen al pasar el mouse">información sobre herramientas</span>.
+    </p>
+
+    <!-- ::before y ::after ejemplo-->
+    <q>Algunas circunstancias</q>, él dijo, <q>que somos mejores que nadie</q>.
+    
+    <!-- ::before ejemplo-->
+    <form action="">
+        <label for="hora">
+            <span class="hora">Hora</span>
+            <input class="hora-perfecta" type="time" id="hora" name="hora">
+        </label>
+        <input type="submit">
+    </form>
+
+    <!-- ::first-letter ejemplo-->
+    <p class="first-letter-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>
+      <p class="first-letter-p">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+      <p class= "first-letter-p">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+        aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+        esse molestie consequat.</p>
+      <p class="first-letter-p">-El comienzo es un signo de puntuación especial.</p>
+      <p class="first-letter-p">_El comienzo es un signo de puntuación especial.</p>
+      <p class="first-letter-p">"El comienzo es un signo de puntuación especial.</p>
+      <p class="first-letter-p">'El comienzo es un signo de puntuación especial.</p>
+      <p class="first-letter-p">*El comienzo es un signo de puntuación especial.</p>
+      <p class="first-letter-p">#El comienzo es un signo de puntuación especial.</p>
+      <p class="first-letter-p">「特殊的汉字标点符号开头。</p>
+      <p class="first-letter-p">《特殊的汉字标点符号开头。</p>
+      <p class="first-letter-p">“特殊的汉字标点符号开头。</p>
+      
+      <!-- ::selection-->
+      <!-- ::placeholder ejemplo-->
+      <input placeholder="Escribe algo aquí!">
+        <!--:checked ejemplo 1-->
+    <div>
+        <input type="radio" name="my-input" id="yes">
+        <label for="yes">SI</label>
+      
+        <input type="radio" name="my-input" id="no">
+        <label for="no">No</label>
+      </div>
+      
+      <div>
+        <input type="checkbox" name="my-checkbox" id="opt-in">
+        <label for="opt-in">Selecioname7w7</label>
+      </div>
+      
+      <select name="my-select" id="fruit">
+        <option value="opt1">Manzanas</option>
+        <option value="opt2">Mandarinas</option>
+        <option value="opt3">Peras</option>
+      </select>
+
+<!--:checked ejemplo 2-->
+
+<input type="checkbox" id="expand-toggle" />
+
+<table>
+  <thead>
+    <tr><th>Columna #1</th><th>Columna #2</th><th>Columna #3</th></tr>
+  </thead>
+  <tbody>
+    <tr class="expandable"><td>[#1 more text]</td><td>[#2 more text]</td><td>[#3 more text]</td></tr>
+    <tr><td>[#1 a.text]</td><td>[#2 a.text]</td><td>[#3 a.text]</td></tr>
+    <tr><td>[#1 b.text]</td><td>[#2 b.text]</td><td>[#3 b.text]</td></tr>
+    <tr class="expandable"><td>[#1 more text]</td><td>[#2 more text]</td><td>[#3 more text]</td></tr>
+    <tr class="expandable"><td>[#1 more text]</td><td>[#2 more text]</td><td>[#3 more text]</td></tr>
+  </tbody>
+</table>
+<label for="expand-toggle" id="expand-btn">filas ocultas</label>
+
+<!--:default ejemplo-->
+<input type="radio" name="season" id="spring">
+<label for="spring">Spring</label>
+
+<input type="radio" name="season" id="summer" checked>
+<label for="summer">Summer</label>
+
+<input type="radio" name="season" id="fall">
+<label for="fall">Fall</label>
+
+<input type="radio" name="season" id="winter">
+<label for="winter">Winter</label>
+
+<!--:dir() ejemplo-->
+<div dir="rtl" >
+    <span >TEXTO PRUEBAA 1</span>
+    <div dir="ltr">TEXTO PRUEBAA 2
+    <div dir="auto">עִבְרִית</div>
+    </div>
+  </div>
+
+<!--:disabled ejemplo 1-->
+  <form action="#">
+    <fieldset id="shipping">
+      <legend>Dirección de Envío</legend>
+      <input type="envio" placeholder="Nombre">
+      <input type="envio" placeholder="Dirección">
+      <input type="envio" placeholder="Código postal">
+    </fieldset>
+    <br>
+    <fieldset id="billing">
+      <legend>Dirección de facturación</legend>
+      <label for="billing_is_shipping">Igual que la dirección de envío:</label>
+      <input type="checkbox" id="billing-checkbox" checked>
+      <br>
+      <input type="envio" placeholder="Nombre" disabled>
+      <input type="envio" placeholder="Dirección" disabled>
+      <input type="envio" placeholder="Código postal" disabled>
+    </fieldset>
+  </form>
+  
+<!--:disabled ejemplo 2-->
+  <div class="box"><!-- Voy a ser de color. --></div>
+<div class="box">Voy a ser del color que quiera ser .</div>
+<div class="box"> ..........................................................................................
+    <!-- Seré de color rosa debido a los espacios en blanco alrededor de este comentario. -->
+</div>
+
+<!--:enabled :disabled ejemplo-->
+<form action="url_of_form">
+    <label for="FirstField" >Primer campo (habilitado):</label>
+    <input type="text" id="FirstField" value="Escribe..."><br>
+  
+    <label for="SecondField" class="y-no-escribir">Segundo campo (deshabilitado):</label>
+    <input type="text" id="SecondField" value="Xd pero aquí no escribas" disabled="disabled"><br>
+    <input type="button" id="FirstEnviar" value="Enviar">
+  </form>
+
+<!--:first ejemplo-->
+<p>Primera página.</p>
+<p>Segunda página.</p>
+<button>Imprimir!</button>
+
+<!--:first-child ejemplo 1-->
+<div>
+    <p class="texto-selecionado">¡Este texto está seleccionado!</p>
+    <p class="texto-selecionado">Este texto no está selec.</p>
+  </div>
+  
+  <div>
+    <h2>Este texto no está selec.: no es un `p`.</h2>
+    <p class="texto-selecionado">Este texto no está selec.</p>
+  </div>
+
+<!--:first-child ejemplo 2-->
+<ul class="lista-segunda-todo">
+  <li class="lista-segunda">Objeto 1</li>
+  <li class="lista-segunda">Objeto 2</li>
+  <li class="lista-segunda">Objeto 3
+    <ul>
+      <li class="lista-segunda">Objeto 3.1</li>
+      <li class="lista-segunda">Objeto 3.2</li>
+      <li class="lista-segunda">Objeto 3.3</li>
+    </ul>
+    </li>
+</ul>
+
+<!--:first-of-type ejemplo 1-->
+
+<div>
+    <h2>Encabezado</h2>
+    <p class="parrafo">Párrafo 1</p>
+    <p class="parrafo">Párrafo 2</p>
+</div>
+
+<!--:first-of-type ejemplo 2-->
+<article >
+    <div>!Este `div` es primero!</div>
+    <div>¡Este <span>`span` anidado es el primero</span>!</div>
+    <div>¡Este <em>`em` anidado es el primero</em>, pero este <em>`em` anidado es el último</em>!</div>
+    <div>¡Este <span>`span` anidado tiene estilo</span>!</div>
+    <b>¡Este `b` califica!</b>
+    <div>Este es el `div` final.</div>
+  </article>
+
+  <!-- :fullscreen ejemplo -->
+  <div id="fullscreen">
+    <h1>Demostración :fullscreen</h1>
+    <p>Este texto se pondrá grande y rojo cuando el navegador esté en modo de pantalla completa.</p>
+    <button id="fullscreen-button">Entrar en pantalla completa</button>
+  </div>
+  <script>
+  var fullscreenButton = document.getElementById("fullscreen-button");
+  var fullscreenDiv    = document.getElementById("fullscreen");
+  var fullscreenFunc   = fullscreenDiv.requestFullscreen;
+  
+  if (!fullscreenFunc) {
+    ['mozRequestFullScreen',
+     'msRequestFullscreen',
+     'webkitRequestFullScreen'].forEach(function (req) {
+       fullscreenFunc = fullscreenFunc || fullscreenDiv[req];
+     });
+  }
+  
+  function enterFullscreen() {
+    fullscreenFunc.call(fullscreenDiv);
+  }
+  
+  fullscreenButton.addEventListener('click', enterFullscreen);
+</script>
+
+<!-- :focus ejemplo -->
+<input class="red-input" value="Seré verde y blanco cuando enfoque."><br>
+<input class="blue-input" value="Voy a ser lila cuando enfoque.">
+
+<!-- :hover ejemplo -->
+<a class="pasa-delante" href="#">Intenta pasar el mouse sobre este enlace.</a>
+
+</body>
+</html>
