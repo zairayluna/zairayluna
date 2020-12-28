@@ -1,0 +1,15 @@
+/* Em es un acronimo de elemento y lo que hace em es que va a 
+tomar el tamaño de fuente que tenga el padre directo, quiere decir
+en este caso a nosotros a main no le hemos puesto ningun tamaño de
+fuente pero esta tomando el tamaño de fuente que tenga el html po defecto, si le
+ponemos un tamaño de fuente a body por ejemplo de 20px ya de hay va
+empezar a tomarlo 20px × 1em= 20px y un em van a ser estos 16px,
+ 16px × 1,5em: 24px */
+
+ body {
+    font-size: 20px;
+ }
+
+.text-container {
+    font-size: 1em;
+}
