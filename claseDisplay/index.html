@@ -7,11 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <section >
-            <img class="flores" src="https://images.theconversation.com/files/274706/original/file-20190515-60529-j8b5kz.jpg?ixlib=rb-1.1.0&rect=0%2C673%2C6248%2C3124&q=45&auto=format&w=1356&h=668&fit=crop" alt="flores">
-        </section>
-    </main>
     <h2 class="title">Elementos "p" con un Display Block: Ocupa todo el  Width del Viewport</h2>
     <h5 class="text">Block: Estos toman el 100% del width pero el contenido no suele ocupar todo el espacio, por lo que un elemento no puede posicionarse a un lado de el.
         Se le puede poner el width deseado, height deseado, añadir margin, padding sin problema. Pero recordando que ocupara este elemento todo el largo de una Fila por asi decirlo.
@@ -30,14 +25,52 @@
     <h2 class="title">Elements inline-block</h2>
     <h5 class="text">inline-block: Este tiene la combinación de los 2 anteriores. Haciéndolo un mejor candidato para usarlo.
         Permite modificar su width, height, añadirle margin, padding sin problemas y lo mejor es que mientras que haya espacio a un lado suyo, este permitirá posicionar mas elementos ahi.</h5>
-    <nav>
-    <ul>
-        <li>Menu</li>
-        <li>Cursos</li>
-        <li>Tutoriales</li>
-        <li>Tienda</li>
-        <li>Contacto</li>
-    </ul>
-    </nav>
+    <header>
+        <div class="flores"></div>
+        <nav>
+            <ul>
+                <li>Menu</li>
+                <li>Cursos</li>
+                <li>Tutoriales</li>
+                <li>Tienda</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- DYSPLAY BLOCK OTRO EJEMPLO -->
+        <section>
+            <div class="titulo-ej-block">
+                <p class="titulo-block">dysplay: block</p>
+                <div>
+                <p class="ej-block">display: block</p>
+                <p class="ej-block">display: block</p>
+                <p class="ej-block">display: block</p>
+                </div>  
+            </div>
+        </section>
+        <!-- DYSPLAY INLINE OTRO EJEMPLO -->
+        <section>
+            <div class="titulo-ej-inline">
+                <p class="titulo-inline">dysplay: inline</p>
+                <div>
+                <p class="ej-inline">display: inline</p>
+                <p class="ej-inline">display: inline</p>
+                <p class="ej-inline">display: inline</p>
+                </div>  
+            </div>
+        </section>
+        <!-- DYSPLAY INLINE-BLOCK OTRO EJEMPLO -->
+        <section>
+            <div class="titulo-ej-inline-block">
+                <p class="titulo-inline-block">dysplay: inline-block</p>
+                <div>
+                <p class="ej-inline-block">display: inline-block</p>
+                <p class="ej-inline-block">display: inline-block</p>
+                <p class="ej-inline-block">display: inline-block</p>
+                </div>  
+            </div>
+        </section>
+    </main>
 </body>
 </html>
