@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.fondo {
+    background-image: url("./imagenes/star-wars-backgrounds-25.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+}
+
+ul.nav li {
+    display: inline-block;
+    color: rgb(38 167 205);
+    margin-right: 25px;
+    list-style-type: none ;
+    float: right;
+    text-decoration: none;
+    margin-top: 45px;
+    font-size: 25px;
+    z-index: 1;
+    
+   
+}
+
+ul.nav p {
+    float: left;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    left: 250px;
+}
+
+.mariposa {
+    width: 10%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+      
+/* Adaptamos las reglas al código que genera drupal y definimos los estilos generales */
+
+/* Lo primero es posicionar el formulario para asegurarnos que el efecto se produce de derecha a izquierda */
+.navbar-form {
+    float: right;
+    right:0px;
+    top:30px;
+    z-index: 0;
+}
+
+/* Definimos las transiciones */
+.navbar-form .form-control[type=text] {
+    background: transparent;
+    display:inline-block;
+    transition: all .5s;
+}
+/* Al situar el puntero en el campo de búsqueda este cambia su color de fondo a blanco, el color de la letra, el borde y la sombra */
+.navbar-form .form-control[type=text]:focus {
+    background-color: #fff;
+    border-color: #729fcf;
+    color:#333;
+}
+
+/* Para pantallas grandes hacemos que el formulario se despliegue con amplitud ya que disponemos de espacio en la barra de navegación, la busqueda se ejecuta con intro o pinchando en el icono de la lupa */
+@media (min-width:1500px) {
+    .navbar-form input.form-control[type=text] { width: 250px;
+    height: 50px;}
+    .navbar-form input.form-control[type=text]:focus { width: 400px; }
+}
+
+
+
+
+
+* {}
+* {}
+* {}
+* {}
+* {}
+* {}
+* {}
+* {}
+* {}
+* {}
+* {}
+* {}
