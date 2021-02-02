@@ -9,8 +9,8 @@
     width: 100%;
     height: 100vh;
     background-size: cover;
-    z-index: -1;
-    position: absolute;
+    z-index: -5;
+    position: fixed;
 }
 
 ul.nav li {
@@ -35,49 +35,76 @@ ul.nav p {
 }
 
 .mariposa {
-    width: 10%;
+    width: 5%;
     position: fixed;
     z-index: 0;
     top: 0;
     left: 0;
+    margin-left: 10px;
 }
-      
+
+.logos {
+    display: inline-block;
+}
+
+.lupa {
+    width: 2%;
+    float: right;
+    margin-top: 10px;
+}
+
+.amigos {
+    width: 2%;
+    float: right;
+    margin-top: 10px;
+}
+
+.carro {
+    width: 2%;
+    float: right;
+    margin-top: 10px;
+}
+
+.texto-mariposa {
+    
+}
 /* Adaptamos las reglas al código que genera drupal y definimos los estilos generales */
 
 /* Lo primero es posicionar el formulario para asegurarnos que el efecto se produce de derecha a izquierda */
 .navbar-form {
-    float: right;
     right:0px;
     top:30px;
+    float: right;
     z-index: 0;
 }
 
 /* Definimos las transiciones */
-.navbar-form .form-control[type=text] {
+.navbar-form .buscar[type=text] {
     background: transparent;
+    color: white;
+    
     display:inline-block;
     transition: all .5s;
 }
 /* Al situar el puntero en el campo de búsqueda este cambia su color de fondo a blanco, el color de la letra, el borde y la sombra */
-.navbar-form .form-control[type=text]:focus {
-    background-color: #fff;
-    border-color: #729fcf;
-    color:#333;
+.navbar-form .buscar[type=text]:focus {
+    border-color: #0004ff;
+    box-shadow: 2px 2px 10px rgb(255, 255, 255);
+    color: rgb(175, 6, 6);
 }
 
 /* Para pantallas grandes hacemos que el formulario se despliegue con amplitud ya que disponemos de espacio en la barra de navegación, la busqueda se ejecuta con intro o pinchando en el icono de la lupa */
 @media (min-width:1500px) {
-    .navbar-form input.form-control[type=text] { width: 250px;
+    .navbar-form input.buscar[type=text] { width: 250px;
     height: 50px;}
-    .navbar-form input.form-control[type=text]:focus { width: 400px; }
+    .navbar-form input.buscar[type=text]:focus { width: 400px; }
 }
 
 
 
 
 
-* {}
-* {}
+
 * {}
 * {}
 * {}
