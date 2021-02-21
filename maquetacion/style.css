@@ -3,24 +3,398 @@
     margin: 0;
     padding: 0;
 }
-
+/* IMAGEN DE FONDO DEGRADADO AZUL Y BLANCO */
 .fondo {
-    background-image: url("./imagenes/star-wars-backgrounds-25.jpg");
+    background: linear-gradient(to bottom, #3388e5, #ffffff);
     width: 100%;
     height: 100vh;
     background-size: cover;
-    z-index: -5;
+    z-index: -99;
     position: fixed;
 }
+/* FIN DE IMAGEN DE FONDO DEGRADADO AZUL Y BLANCO */
+/* CABECERA NEGRA */
+    
+.main-header {
+	background: #333;
+	color: white;
+	height: 80px;
+	width: 100%; 
+	left: 0; 
+	top: 0; 
+	position: fixed; 
+    box-shadow: 0px 0px 5px 1px black
+}
 
+	.main-header a {
+		color: white;
+	}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+    color: black;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-top: 80px;
+    }
 
+    /*
+    * Logo MARIPOSA
+    */
 
+    .logo-header {
+	float: left;
+	padding: 15px 0 0 50px;
+	text-decoration: none;
+    }
+	.logo-header:hover {
+		color: #0b76a6;
+	}
+	
+	.logo-header .site-name {
+		display: block;
+		font-weight: 400;
+		font-size: 2.5em;
+        font-family: 'DreamScar', arial;
+        margin-bottom: 10px;
+        z-index: 2;
+	}
+	
+	.logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+        z-index: 2;
+	}
+    .mariposa{
+		position: fixed;
+        width: 60px;
+        height: 60px;
+        top: 0px;
+        z-index: 3;
+        left: 261px;
+	}
+    /*
+    * FIN DE Logo MARIPOSA
+    */
+    /*
+    *ETIQUETA Navegación
+    */
+    nav {
+        float: right;
+    }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            padding-right: 20px;
+        }
+        
+            nav ul li {
+                display: inline-block;
+                line-height: 80px;
+            }
+                
+                nav ul li a {
+                    display: block;
+                    padding: 0 10px;
+                    text-decoration: none;
+                }
+                
+                    nav ul li a:hover {
+                        background: #0b76a6;
+                    }
+    /*
+    * FIN DE ETIQUETA Navegación
+    */
+    .box{
+        margin: 15px auto;
+        width: 300px;
+        height: 50px;
+    }
+    .container-1{
+        width: 300px;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+      }
+      .container-1 input#search{
+        width: 50px;
+        height: 50px;
+        background: #2b303b;
+        border: none;
+        font-size: 10pt;
+        float: left;
+        color: #cae5ff;
+        padding-left: 45px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        color: #fff;
 
+        /* transicion */
 
+        -webkit-transition: background .55s ease;
+        -moz-transition: background .55s ease;
+        -ms-transition: background .55s ease;
+        -o-transition: background .55s ease;
+        transition: background .55s ease;
+      }
+      .container-1 input#search::-webkit-input-placeholder {
+        color: #65737e;
+     }
+      
+     .container-1 input#search:-moz-placeholder { /* Firefox 18- */
+        color: #65737e;  
+     }
+      
+     .container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+        color: #65737e;  
+     }
+      
+     .container-1 input#search:-ms-input-placeholder {  
+        color: #65737e;  
+     }
+    
+     .container-1 .icon{
+        position: absolute;
+        top: 50%;
+        margin-left: 17px;
+        margin-top: 17px;
+        z-index: 1;
+        color: #4f5b66;
+      }
+      .container-1 .icon{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        margin-left: 5px;
+        margin-top: 3px;
+        z-index: 1;
+      }
 
+      .icon-punto{
+        color: white;
+        margin-top: 20px;
+        margin-left: 35px;
+        z-index: 2;
+      }
+    .container-1 input#search:focus, .container-1 input#search:active{
+        outline:none;
+        width: 300px;
+      }
+    .container-2:hover input#search{
+        width: 300px;
+        }
+         
+    .container-2:hover .icon{
+          color: #93a2ad;
+        }
+/* FIN DE CABECERA NEGRA */
+/* SECION DE LA IZQUIERDA */
+.division-de-objetos{
+    background-color: rgba(255, 255, 255, 0.589);
+    width: 500px;
+    height: 780px;
+    border-radius: 17px;
+    border-right: black 1px solid;
+    z-index: 1;
+    position: fixed;
+}
+    section div.division-de-objetos div a:hover{
+        transition: .55s ease;
+        color: #0b76a6;
+    }
 
+    .caja-1{
+        background-image: url(./imagenes/azul-con-rosa-1.png);
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 440px;
+        height: 165px;
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 17px;
+        box-shadow: 0px 0px 5px 1px black;
+        z-index: 2;
+    }
+        div.division-de-objetos div a{
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            margin-top: 35px;
+            margin-left: -300px;
+            font-size: 25px;
+            z-index: 3;
+            font-family: ;
+            display: block;
+            text-shadow: black 0.1em 0.1em 0.2em;
+        }
+            .caja-boton-1{}
 
-* {}
+    .caja-2{
+        background-image: url(./imagenes/azul-con-rosa-2.jpg);
+        position: absolute;
+        top: 215px;
+        left: 30px;
+        width: 440px;
+        height: 165px;
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 17px;
+        box-shadow: 0px 0px 5px 1px black;
+        z-index: 2;
+    }
+            .caja-boton-2{}
+
+    .caja-3{
+        background-image: url(./imagenes/azul-con-rosa-3.jpg);
+        position: absolute;
+        top: 400px;
+        left: 30px;
+        width: 440px;
+        height: 165px;
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 17px;
+        box-shadow: 0px 0px 5px 1px black;
+        z-index: 2;
+    }
+            .caja-boton-3{}
+
+    .caja-4{
+        background-image: url(./imagenes/azul-con-rosa-4.jpg);
+        position: absolute;
+        top: 585px;
+        left: 30px;
+        width: 440px;
+        height: 165px;
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 17px;
+        box-shadow: 0px 0px 5px 1px black;
+        z-index: 2;
+    }
+            .caja-boton-4{}
+/* FIN DE SECION DE LA IZQUIERDA */
+/* PIE DE PAGUINA */
+.footer {
+    width: 100%;
+    background: 0px rgb(51, 51, 51);
+    position: fixed;
+    bottom: 0 ;
+    height: 77px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+/* FIN DEL PIE DE PAGUINA */
+/* REDES SOCIALES */
+.redes-sociales-texto{
+    color: #ffffff;
+    position: absolute;
+    display: block;
+    top: 26px;
+    left: 440px; 
+    font-size: 16px;
+    background: transparent ;
+    width: 110px;
+    height: 200px;
+    margin-right: 100px;
+}
+
+/* Contenedor general y reset de margin y padding */
+.expandir * {
+    margin: 0;
+    padding: 0;
+    }
+    .expandir {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:normal;
+    height:150px;
+    width:360px;
+    background-color: transparent;
+    display:block;
+    position: absolute;
+    margin-left: 570px;
+    top: 16px;
+    border-left: 20px transparent solid;
+    }
+    /* Las imágenes irán en forma de lista */
+    .expandir ul {
+    padding-top:5px;
+    margin-left:10px;
+    }
+    /* Se hacen flotar los elementos para que queden en línea y se elimina el estilo que podría haber predefinido para listas */
+    .expandir ul li {
+    float:left;
+    list-style-type:none;
+    }
+    /* Anulamos estilo predifinido para enlaces en listas */
+    .expandir ul li a {
+    text-decoration:none;
+    margin-right: 30px;
+    }
+    .expandir ul li a.youtube {
+        margin-right: 0px;
+        }
+    /* Estilo de cada imagen en situación inicial y transición suave */
+    .expandir ul li a img {
+    width:20px; /* Ancho inicial imagénes. 50% real */
+    height:20px; /* Alto inicial imagénes. 50% real */
+    border:none;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    }
+    /* El texto que acompaña a las imágenes no se ve inicialmente */
+    .expandir ul li a span {
+    display:none;
+    }
+    /* Mostramos el texto al hacer hover */
+    .expandir ul li:hover a span {
+    display:block;
+    font-size:12px;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    }
+    /* Agrandamos la imagen al hacer hover */
+    .expandir ul li:hover a img {
+    width:38px;
+    height:38px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    }
+/* FIN DE STYLOS REDES SOCIALES */
+/* STYLOS PAGO */
+    .pago-texto{
+        display: block;
+        position: absolute;
+        top: 5px;
+        left:-85px;
+        color: #ffffff;
+        background: transparent;
+        width: 45px;
+        height: 25px;
+    }
+    section.pago ul{
+        position: absolute;
+        left: 1400px;
+        top: 25px;
+    }
+
+    section.pago ul li{
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+/* FIN DE STYLOS PAGO */
 * {}
 * {}
 * {}
