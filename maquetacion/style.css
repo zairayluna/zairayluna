@@ -73,7 +73,7 @@ body {
         height: 60px;
         top: 0px;
         z-index: 3;
-        left: 261px;
+        left: 266px;
 	}
     /*
     * FIN DE Logo MARIPOSA
@@ -280,6 +280,155 @@ body {
     }
             .caja-boton-4{}
 /* FIN DE SECION DE LA IZQUIERDA */
+/* CONTENIDO PRINCIPAL */
+    /* TITULO PRINCIPAL */
+    .titulo-principio1{
+        display: inline-block;
+        position: fixed;
+        left: 520px;
+        margin-top: 10px;
+    }
+    .titulo-principio2{
+        display: inline-block;
+        position: fixed;
+
+    }
+    .tienda-web{
+        display: inline-block;
+        background: transparent;
+        width: 90px;
+        height: 25px;
+        text-decoration: none;
+        }
+    .donde-esta{
+        display: inline-block;
+        background:transparent;
+        width: 300px;
+        height: 25px;
+        text-decoration: none;
+        font-weight:600 ;
+        margin-left: -5px;
+        }
+    /* TITULO PRINCIPAL */
+    /* PRODUCTOS */
+        .todo-de-productos{
+            background: rgba(238, 130, 238, 0);
+            position: fixed;
+            left: 530px;
+            top: 240px;
+        }
+            section.todo-de-productos ul li{
+                display:inline-block;
+            }
+                section.todo-de-productos ul li div.caja-crema{
+                    display:inline-block;
+                    background: rgb(255, 255, 255);
+                    width: 300px;
+                    height: 450px;
+                    border-radius: 17px;
+                    box-shadow: 0px 0px 5px 1px black;
+                    margin-left: 30px;
+                }
+
+                section.todo-de-productos ul li div.caja-letra-crema{
+                    margin-right: auto;
+                    margin-left: auto;
+                    background: transparent;
+                    text-align: center;
+                    display: block;
+                    height: auto;
+                    width: 200px;
+                }
+                    p.crema{
+                        margin-bottom: 10px;
+                    }
+                section.todo-de-productos ul li div img.imagen-crema{
+                    width: 250px;
+                    height: 250px;
+                    display: block;
+                    margin-top: 70px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 25px;
+                }
+                section.todo-de-productos ul li div img.imagen-mariposa{
+                    width: 50px;
+                    height: 50px;
+                    position: fixed;
+                }
+                /* LETRAS CREMAS */
+                    .caja-letras-crema1{
+                        position: absolute;
+                        text-align: center;
+                        width: ;
+                        height: ;
+                        top: 200px;
+                        left: 110px;
+                    }
+                        .caja-letra1-crema1{
+                            font-weight: 400;
+                            font-size: 1.5em;
+                            font-family: 'DreamScar', arial;
+                        }
+                        .caja-letra2-crema1{
+                            font-size: 0.5em;
+                            font-family: Helvetica, Arial, sans-serif;
+                        }
+                    .caja-letras-crema2{
+                        position: absolute;
+                        text-align: center;
+                        width: ;
+                        height: ;
+                        top: 200px;
+                        left: 443px;
+                    }
+                            .caja-letra1-crema2{
+                                font-weight: 400;
+                                font-size: 1.5em;
+                                font-family: 'DreamScar', arial;
+                            }
+                            .caja-letra2-crema2{
+                                font-size: 0.5em;
+                                font-family: Helvetica, Arial, sans-serif;
+                            }
+                    .caja-letras-crema3{
+                        position: absolute;
+                        text-align: center;
+                        width: ;
+                        height: ;
+                        top: 200px;
+                        left: 778px;
+                    }
+                            .caja-letra1-crema3{
+                                font-weight: 400;
+                                font-size: 1.5em;
+                                font-family: 'DreamScar', arial;
+                            }
+                            .caja-letra2-crema3{
+                                font-size: 0.5em;
+                                font-family: Helvetica, Arial, sans-serif;
+                            
+                            }
+                    .caja-letras-crema4{
+                        position: absolute;
+                        text-align: center;
+                        width: ;
+                        height: ;
+                        top: 200px;
+                        left: 1112px;
+                    }
+                            .caja-letra1-crema4{
+                            font-weight: 400; 
+                            font-size: 1.5em;
+                            font-family: 'DreamScar', arial;
+                            }
+                            .caja-letra2-crema4{
+                                font-size: 0.5em;
+                                font-family: Helvetica, Arial, sans-serif;
+                            }
+                /* FIN DE LETRAS CREMAS */
+    /* FIN DE PRODUCTOS*/
+/* FIN DE CONTENIDO PRINCIPAL */
 /* PIE DE PAGUINA */
 .footer {
     width: 100%;
@@ -289,112 +438,113 @@ body {
     height: 77px;
     box-shadow: 0px 0px 5px 1px black;
 }
-/* FIN DEL PIE DE PAGUINA */
-/* REDES SOCIALES */
-.redes-sociales-texto{
-    color: #ffffff;
-    position: absolute;
-    display: block;
-    top: 26px;
-    left: 440px; 
-    font-size: 16px;
-    background: transparent ;
-    width: 110px;
-    height: 200px;
-    margin-right: 100px;
-}
 
-/* Contenedor general y reset de margin y padding */
-.expandir * {
-    margin: 0;
-    padding: 0;
-    }
-    .expandir {
-    font-family:Arial, Helvetica, sans-serif;
-    line-height:normal;
-    height:150px;
-    width:360px;
-    background-color: transparent;
-    display:block;
-    position: absolute;
-    margin-left: 570px;
-    top: 16px;
-    border-left: 20px transparent solid;
-    }
-    /* Las imágenes irán en forma de lista */
-    .expandir ul {
-    padding-top:5px;
-    margin-left:10px;
-    }
-    /* Se hacen flotar los elementos para que queden en línea y se elimina el estilo que podría haber predefinido para listas */
-    .expandir ul li {
-    float:left;
-    list-style-type:none;
-    }
-    /* Anulamos estilo predifinido para enlaces en listas */
-    .expandir ul li a {
-    text-decoration:none;
-    margin-right: 30px;
-    }
-    .expandir ul li a.youtube {
-        margin-right: 0px;
-        }
-    /* Estilo de cada imagen en situación inicial y transición suave */
-    .expandir ul li a img {
-    width:20px; /* Ancho inicial imagénes. 50% real */
-    height:20px; /* Alto inicial imagénes. 50% real */
-    border:none;
-    -webkit-transition: all .3s ease-in;
-    -moz-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    -ms-transition: all .3s ease-in;
-    transition: all .3s ease-in;
-    }
-    /* El texto que acompaña a las imágenes no se ve inicialmente */
-    .expandir ul li a span {
-    display:none;
-    }
-    /* Mostramos el texto al hacer hover */
-    .expandir ul li:hover a span {
-    display:block;
-    font-size:12px;
-    text-align:center;
-    color:rgb(255, 255, 255);
-    }
-    /* Agrandamos la imagen al hacer hover */
-    .expandir ul li:hover a img {
-    width:38px;
-    height:38px;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    }
-/* FIN DE STYLOS REDES SOCIALES */
-/* STYLOS PAGO */
-    .pago-texto{
-        display: block;
-        position: absolute;
-        top: 5px;
-        left:-85px;
+    /* REDES SOCIALES */
+    .redes-sociales-texto{
         color: #ffffff;
-        background: transparent;
-        width: 45px;
-        height: 25px;
-    }
-    section.pago ul{
         position: absolute;
-        left: 1400px;
-        top: 25px;
+        display: block;
+        top: 26px;
+        left: 440px; 
+        font-size: 16px;
+        background: transparent ;
+        width: 110px;
+        height: 200px;
+        margin-right: 100px;
     }
 
-    section.pago ul li{
-        display: inline-block;
-        margin-left: 10px;
-    }
+    /* Contenedor general y reset de margin y padding */
+    .expandir * {
+        margin: 0;
+        padding: 0;
+        }
+        .expandir {
+        font-family:Arial, Helvetica, sans-serif;
+        line-height:normal;
+        height:150px;
+        width:360px;
+        background-color: transparent;
+        display:block;
+        position: absolute;
+        margin-left: 570px;
+        top: 16px;
+        border-left: 20px transparent solid;
+        }
+        /* Las imágenes irán en forma de lista */
+        .expandir ul {
+        padding-top:5px;
+        margin-left:10px;
+        }
+        /* Se hacen flotar los elementos para que queden en línea y se elimina el estilo que podría haber predefinido para listas */
+        .expandir ul li {
+        float:left;
+        list-style-type:none;
+        }
+        /* Anulamos estilo predifinido para enlaces en listas */
+        .expandir ul li a {
+        text-decoration:none;
+        margin-right: 30px;
+        }
+        .expandir ul li a.youtube {
+            margin-right: 0px;
+            }
+        /* Estilo de cada imagen en situación inicial y transición suave */
+        .expandir ul li a img {
+        width:20px; /* Ancho inicial imagénes. 50% real */
+        height:20px; /* Alto inicial imagénes. 50% real */
+        border:none;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        -ms-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+        }
+        /* El texto que acompaña a las imágenes no se ve inicialmente */
+        .expandir ul li a span {
+        display:none;
+        }
+        /* Mostramos el texto al hacer hover */
+        .expandir ul li:hover a span {
+        display:block;
+        font-size:12px;
+        text-align:center;
+        color:rgb(255, 255, 255);
+        }
+        /* Agrandamos la imagen al hacer hover */
+        .expandir ul li:hover a img {
+        width:38px;
+        height:38px;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        }
+    /* FIN DE STYLOS REDES SOCIALES */
+    /* STYLOS PAGO */
+        .pago-texto{
+            display: block;
+            position: absolute;
+            top: 5px;
+            left:-85px;
+            color: #ffffff;
+            background: transparent;
+            width: 45px;
+            height: 25px;
+        }
+        section.pago ul{
+            position: absolute;
+            left: 1400px;
+            top: 25px;
+        }
 
-/* FIN DE STYLOS PAGO */
+        section.pago ul li{
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+    /* FIN DE STYLOS PAGO */
+/* FIN DEL PIE DE PAGUINA */
 * {}
 * {}
 * {}
