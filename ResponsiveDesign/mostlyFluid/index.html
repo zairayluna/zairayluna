@@ -8,8 +8,12 @@
     con la etiqueta <link> pero el archivo de style.css es el archivo que va a tener todo el codigo que se va a utilizar 
     para construir nuestra vista desde mobile y esto se va a cargar cuando tengamos un porcentaje distinto o un 
     +viu+ distinto vaqmos a cargar otro .css. Ejem: -- -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css"> <!-- Tus esilos para enfocados a mobile -->
+    <link rel="stylesheet" href="./mobile.css" media="(min-width: px)">
+    <link rel="stylesheet" href="./tablet.css" media= "Screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./desktop.css.css" media="Screen and (min-width: 800px)">
     <title>Document</title>
+
 </head>
 <body>
     <main class="container">
