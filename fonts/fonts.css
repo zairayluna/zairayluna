@@ -1,0 +1,24 @@
+
+
+/* NK57 Monospace Sc Rg */
+
+	@font-face {
+		font-family: 'woff';
+		src:url('./nk57-monospace-sc-bd/nk57-monospace-sc-bd.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'ttf';
+		src :url('./nk57-monospace-sc-bd/nk57-monospace-sc-bd.ttf') format('truetype');
+	}
+
+	@font-face{
+		font-family: 'svg';
+		src:  url('./nk57-monospace-sc-bd/nk57-monospace-sc-bd.svg') format('svg');
+	}
+	.Night-City-text, .Night-City, .Banda-Sonora-text, .Banda-Sonora{
+	font-family: 'woff', 'ttf', 'svg';
+	}
+
