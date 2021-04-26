@@ -22,3 +22,56 @@
 	font-family: 'woff', 'ttf', 'svg';
 	}
 
+
+
+
+
+
+
+
+    @media (min-width: 320px) {
+        .Night-City-text, .Banda-Sonora-text{
+            font-size: 12px;
+        }
+        .Night-City, .Banda-Sonora{
+            font-size: 28px;
+        }
+    }
+
+	@media (min-width: 375px) {
+        .Night-City-text, .Banda-Sonora-text{
+            font-size: 14px;
+        }
+        .Night-City, .Banda-Sonora{
+            font-size: 30px;
+        }
+    }
+
+	@media (min-width: 425px) {
+        .Night-City-text, .Banda-Sonora-text{
+            font-size: 15px;
+        }
+        .Night-City, .Banda-Sonora{
+            font-size: 30px;
+        }
+    }
+
+	@media (min-width: 768px) {
+        .Night-City-text, .Banda-Sonora-text{
+            font-size: 16px;
+        }
+        .Night-City, .Banda-Sonora{
+            font-size: 30px;
+        }
+    }
+
+	@media (min-width: 1024px) {
+        .Night-City-text, .Banda-Sonora-text{
+            font-size: 15px;
+			text-align: justify;
+        }
+        .Night-City, .Banda-Sonora{
+            font-size: 30px;
+        }
+    }
+
