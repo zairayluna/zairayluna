@@ -1,7 +1,23 @@
-h1 {
+
+
+.h1-ejem1 {
     font-size: 30px;
 }
 
-p{
+.p-ejem1{
     font-size: 18px;
 }
+
+
+html{
+    font-size: 62.5%;
+}
+
+.h1-ejem2{
+    font-size: 3rem;
+}
+
+.p-ejem2{
+    font-size: 1.8rem;
+}
+
